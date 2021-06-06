@@ -14,7 +14,7 @@ import userImg from "../assets/img/userDefault.jpg";
  * @returns
  */
 
-function Nabvar() {
+function Nabvar(props) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
@@ -23,6 +23,7 @@ function Nabvar() {
         <FontAwesomeIcon
           className="text-green-light ml-4 text-2xl lg:ml-8 cursor-pointer"
           icon={faBars}
+          onClick={props.toggleSideBar}
         />
       </div>
       <div className="self-center">
@@ -40,6 +41,7 @@ function Nabvar() {
         >
           <img
             src={userImg}
+            alt="profile pic"
             className="rounded-full border-2 border-green-light w-10 mr-4 lg:mr-8 cursor-pointer"
           />
         </button>

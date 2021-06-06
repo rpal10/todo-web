@@ -1,9 +1,9 @@
-import NavBar from "./layout/Nabvar";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
     <div>
-      <NavBar />
+      <Dashboard />
     </div>
   );
 }
