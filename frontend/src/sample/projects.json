@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "project 1",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "task1",
+        "description": "tarea 1 ",
+        "status": 1
+      },
+      {
+        "id": 2,
+        "title": "task2",
+        "description": "tarea 2 ",
+        "status": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "project 2",
+    "tasks": [
+      {
+        "id": 1,
+        "title": "task1",
+        "description": "tarea 1 ",
+        "status": 1
+      },
+      {
+        "id": 2,
+        "title": "task2",
+        "description": "tarea 2 ",
+        "status": 0
+      }
+    ]
+  }
+]

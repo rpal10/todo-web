@@ -14,20 +14,21 @@ import userImg from "../assets/img/userDefault.jpg";
  * @returns
  */
 
-function Nabvar() {
+function Nabvar(props) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <div className="flex flex-nowrap justify-between bg-green h-16">
+    <div className="flex flex-nowrap justify-between bg-purple h-16">
       <div className="self-center">
         <FontAwesomeIcon
-          className="text-green-light ml-4 text-2xl lg:ml-8 cursor-pointer"
+          className="text-purple-light ml-4 text-2xl lg:ml-8 cursor-pointer"
           icon={faBars}
+          onClick={props.toggleSideBar}
         />
       </div>
       <div className="self-center">
         <FontAwesomeIcon
-          className="text-green-light text-4xl"
+          className="text-purple-light text-4xl"
           icon={faAddressBook}
         />
       </div>
@@ -36,11 +37,12 @@ function Nabvar() {
           onClick={() => {
             setDropdownOpen(!dropdownOpen);
           }}
-          className="relative z-10 block rounded-md bg-white p-2 focus:outline-none"
+          className="relative z-10 block rounded-md p-2 focus:outline-none"
         >
           <img
             src={userImg}
-            className="rounded-full border-2 border-green-light w-10 mr-4 lg:mr-8 cursor-pointer"
+            alt="profile pic"
+            className="rounded-full border-2 border-purple-light w-10 mr-4 lg:mr-8 cursor-pointer"
           />
         </button>
         {dropdownOpen && (
@@ -48,21 +50,21 @@ function Nabvar() {
             <a
               href="_blank"
               alt="Profile"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-green hover:text-green-light"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple hover:text-purple-light"
             >
               Profile
             </a>
             <a
               href="_blank"
               alt="Profile"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-green hover:text-green-light"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple hover:text-purple-light"
             >
               Settings
             </a>
             <a
               href="_blank"
               alt="Profile"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-green hover:text-green-light"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple hover:text-purple-light"
             >
               Sign Out
             </a>
