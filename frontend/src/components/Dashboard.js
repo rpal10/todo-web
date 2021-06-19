@@ -16,7 +16,7 @@ function Dashboard() {
 
       <div className="flex">
         {sidebar && <Sidebar />}
-        <h2 className="float-right  bg-green-light w-screen">dashboard</h2>
+        <h2 className="float-right bg-purple-light w-screen">dashboard</h2>
       </div>
     </div>
   );
